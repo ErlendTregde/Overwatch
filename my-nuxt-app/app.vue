@@ -1,11 +1,16 @@
 <template>
   <v-app>
-    <NuxtRouteAnnouncer />
-    <v-main>
-      <v-container>
-        <h1>Welcome to My Nuxt App</h1>
-        <v-btn color="primary">Get Started</v-btn>
-      </v-container>
-    </v-main>
+    <div class="app-background">
+      <NuxtPage />
+    </div>
   </v-app>
 </template>
+
+<style scoped>
+.app-background {
+
+  min-height: 100vh;
+  padding: 20px;
+  color: white; 
+}
+</style>
