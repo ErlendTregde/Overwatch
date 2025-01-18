@@ -1,6 +1,11 @@
 import vuetify from 'vite-plugin-vuetify';
 
 export default defineNuxtConfig({
+  // Base URL for GitHub Pages (important for static deployments)
+  app: {
+    baseURL: '/OverwatchGallery/', // Replace with your repository name
+  },
+
   // Enable CSS for Vuetify
   css: ['vuetify/styles'],
 
@@ -18,14 +23,6 @@ export default defineNuxtConfig({
     ],
   },
 
-  // Global Runtime Configuration (Optional)
-  runtimeConfig: {
-    public: {
-      // Example for adding runtime variables
-      appName: 'My Nuxt App with Vuetify',
-    },
-  },
-
-  // Nuxt Pages Settings
-  pages: true, // Ensure the pages directory is enabled for route generation
+  // Enable Pages Directory
+  pages: true,
 });
